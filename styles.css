@@ -15,32 +15,33 @@ li, a, button {
     cursor: pointer;
 }
 header {
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: aliceblue;
+    background-color: white;
 }
 
-.nav-link {
+.container-nav-link {
+    display: flex;
+    font-size: 1.8rem;
     list-style: none;
 }
-.nav-link li {
-    display: inline-block;
-    padding: 0 20px;
-    margin: 0 10px;
-    font-size: 1.6rem;
-}
-.nav-link li a{
+.nav-link {
     color: lightslategray;
     font-weight: bold;
+    padding: 0 30px;
 }
 .nav-link li a:hover {
     color: orangered;
 }
 .title {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 150px;
 
 }
 #title {
@@ -166,4 +167,15 @@ footer {
 .footer-right li {
     padding: 0 20px;
     font-size: 1.4rem;
-} 
+}
+@media (max-width: 320px) {
+    #pricing {
+      flex-direction: row;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
