@@ -11,45 +11,51 @@ li, a, button {
     cursor: pointer;
 }
 header {
-    position: fixed;
-    width: 100%;
-    min-height: 80px;
-    top: 0;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
     align-items: center;
-    padding: 20px 50px;
-    background-color: white;
+    padding: 0 20px;
+    background-color: #f7f7f7;
+    z-index: 1000;
 }
 #header-img {
-    border: 1px solid black;
+    width: 160px;
     padding: 10px;
+    margin-left: 50px;
 }
 .container-nav-link {
     display: flex;
     justify-content: flex-end;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     list-style: none;
+    margin-right: 50px;
 }
 .nav-link {
-    color: lightslategray;
-    font-weight: bold;
-    padding: 0 10px;
+    color: #93193d;
+    font-weight: lighter;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container-nav-link li a:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
+
 .form {
+    margin-top: 100px;
     width: 100%;
     text-align: center;
-    padding:  0 10px; 
+    padding:  40px 10px; 
 }
 #title {
-    padding: 0 10px;
-    font-family: fantasy;
+    padding: 50px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 4rem;
     text-align: center;
-    margin-top: 150px;
+    font-weight: lighter;
 
 }
 #email {
@@ -70,26 +76,45 @@ header {
     font-size: 1.2rem;
     font-style: italic;
 }
-#features {
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 80vh;
-    padding: 20px 50px;
-}
-.grid {
-    width: 70%;
     margin: 0 auto;
-    padding: 40px 0;
+    margin-top: 100px;
+    background-color: #f27e20;
+    padding: 20px 50px;
+    border-radius: 5px;
+    color: white;
 }
-.desc h2 {
-    font-size: 2.4rem;
-    font-family: fantasy;
-}
-.desc p {
-    font-size: 1.4rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#link2 {
+.container .titulo-benefits {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
     text-align: center;
+    letter-spacing: 4px;
+
+}
+.container h2 {
+    font-size: 2rem;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    
+}
+.container p {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#link2 {
+    margin-top: 100px;
+    text-align: center;
+    padding: 100px;
 }
 
 #link3 {
@@ -100,14 +125,13 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px;
 }
 .product {
     width: 200px;
     height: auto;
     margin:  0 auto;
-    background-color: lightblue;
-    border: 5px solid lightslategray;
+    background-color: #f27e20;
     border-radius: 20px;
 }
 .level {
@@ -133,23 +157,27 @@ header {
     box-shadow: 2px 2px;
     border-radius: 40px;
     font-family: Verdana;
-    font-weight: bold;
-    background-color: olivedrab;
-    color: aliceblue;
+    font-weight: lighter;
+    background-color: white;
+    color: #93193d;
 }
 .btn:hover {
     cursor: pointer;
-    background-color: greenyellow;
+    background-color: lightblue;
     color: black;
 }
 footer {
     width: 100%;
     height: 50px;
     margin-top: 20px;
-    background-color: aliceblue;
+    background-color: #f7f7f7;
+    color: black;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+footer a {
+    color: black;
 }
 .footer-right {
     display: flex;
