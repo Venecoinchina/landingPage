@@ -1,0 +1,26 @@
+@media (max-width: 600px) {
+    header {
+        height: 90px;
+    }
+    .container-nav-link {
+        margin-top: 40px;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    #title {
+        font-size: 3rem;
+    }
+    .btn {
+        
+    }
+    #link3 {
+        margin-top: 100px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        
+    }
+    #video {
+        width: 300px;
+        height: auto;
+    }
+}
